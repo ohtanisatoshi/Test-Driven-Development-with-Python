@@ -40,7 +40,7 @@ class SomeTest(TestCase):
     response = home_page(request)
 
     self.assertEqual(response.status_code, 302)
-    self.assertEqual(response['location'], '/')
+    self.assertEqual(response['location'], '/lists/the-only-list-in-the-world')
     #self.assertIn('A new list item', response.content.decode())
     #expected_html = render_to_string(
       #'home.html',
